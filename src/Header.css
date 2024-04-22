@@ -1,0 +1,14 @@
+h1 {
+   color: #ffffff !important;
+   font-family: "Roboto Mono", monospace;
+   font-size: 1.3em !important;
+}
+
+header {
+    background-color: #000000;
+}
+
+.menu {
+    width: 24px;
+    cursor: pointer;
+}
