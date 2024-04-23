@@ -6,26 +6,26 @@ import {
     CarouselIndicators,
     CarouselCaption,
 } from 'reactstrap';
+import './Home.css'
 
+const time = '../public/time.jpg'
 const items = [
+  
     {
-        src: 'https://picsum.photos/id/123/1200/400',
-        altText: 'Slide 1',
-        caption: 'Slide 1',
+        src: 'https://www.institutoclaro.org.br/educacao/wp-content/uploads/sites/2/2013/11/planodeaulaesporte_1840.jpg',
+     
         key: 1,
     },
     {
-        src: 'https://picsum.photos/id/456/1200/400',
-        altText: 'Slide 2',
-        caption: 'Slide 2',
+        src: time,
+      
         key: 2,
     },
     {
-        src: 'https://picsum.photos/id/678/1200/400',
-        altText: 'Slide 3',
-        caption: 'Slide 3',
+        src: 'https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/esportes/WhatsApp%20Image%202020-01-20%20at%2014_41_23%20(2).jpeg',
+      
         key: 3,
-    },
+    }
 ];
 
 function CarouselSlide(args) {
@@ -55,11 +55,13 @@ function CarouselSlide(args) {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 key={item.src}
+                
             >
-                <img src={item.src} alt={item.altText} />
+                <img  className='medium' src={item.src} alt={item.altText} />
                 <CarouselCaption
                     captionText={item.caption}
                     captionHeader={item.caption}
+                   
                 />
             </CarouselItem>
         );
@@ -71,6 +73,7 @@ function CarouselSlide(args) {
             next={next}
             previous={previous}
             {...args}
+         
         >
             <CarouselIndicators
                 items={items}

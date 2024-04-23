@@ -1,7 +1,7 @@
 h1 {
-   color: #ffffff !important;
-   font-family: "Roboto Mono", monospace;
-   font-size: 1.3em !important;
+    color: #ffffff !important;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.3em !important;
 }
 
 header {
@@ -12,6 +12,17 @@ header {
     width: 24px;
     cursor: pointer;
 }
-header{
+
+header {
     width: 100%;
+    padding: 10px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end !important;
+
+}
+
+.navbar-collapse a {
+    color: #ffffff;
 }

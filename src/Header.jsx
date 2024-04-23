@@ -12,8 +12,8 @@ function Header() {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <header className='container-fluid' >
-            <Navbar light expand="md">
+        <header  >
+            <Navbar  expand="md " className='container bg-transparent' >
                 <img className='menu' src={PhoenixLoo}alt="" />
                 <h1 >Projeto Fênix</h1>
                     <img onClick={toggle} className="d-md-none menu"src={MenuIcon}alt="" />
@@ -36,7 +36,7 @@ function Header() {
                     </OffcanvasBody>
                 </Offcanvas>
                 <Collapse isOpen={!isOpen} navbar className="d-none d-md-block">
-                    <Nav className="mr-auto" navbar>
+                    <Nav className="mr-auto justify-end" navbar>
                         <NavItem>
                             <NavLink href="#">Sobre o Projeto</NavLink>
                         </NavItem>

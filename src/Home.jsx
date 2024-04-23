@@ -11,12 +11,10 @@ function Home() {
 
   return (
     <>
-
-
-      
         <Header />
-        <div className="container">
         <CarouselSlide />
+        <div className="container">
+       
         <div id='inicio' className='card1'>
           <h2>Projeto Fênix de <br />Esporte, <br />Cultura <br />e Lazer</h2>
           <strong className='text-center'>Desde 2015</strong>

@@ -1,5 +1,5 @@
 #conquistas {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEdl3OosZ8R0zGbtUz9CK0IWzNvM7nEHcVwQm_xYPOTg&s");
+    background-image: url("https://img.freepik.com/fotos-premium/diversas-maos-levantam-medalhas-em-celebracao-das-conquistas-no-dia-olimpico-dia-olimpico-internacional_1069077-5575.jpg?w=826");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -98,4 +98,16 @@
     max-width: 1400px;
     background-color: rgb(255, 255, 255);
     margin: 0;
+}
+.medium{
+    max-height: 500px !important;
+    width: 100%;
+    object-fit: cover
+    ;
+}
+@media (width > 1000px){
+    #inicio h2,
+#conquistas h2 {
+    font-size: 50px;
+}
 }
