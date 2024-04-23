@@ -12,3 +12,6 @@ header {
     width: 24px;
     cursor: pointer;
 }
+header{
+    width: 100%;
+}

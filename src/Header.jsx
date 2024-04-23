@@ -12,7 +12,7 @@ function Header() {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <header >
+        <header className='container-fluid' >
             <Navbar light expand="md">
                 <img className='menu' src={PhoenixLoo}alt="" />
                 <h1 >Projeto Fênix</h1>

@@ -87,6 +87,15 @@
     justify-content: center;
     align-items: center;
 }
-#apoia-se h2,#apoia-se h3 ,#apoia-se p {
+
+#apoia-se h2,
+#apoia-se h3,
+#apoia-se p {
     color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1400px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
 }
