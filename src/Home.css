@@ -44,25 +44,27 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+#conteudo{
+    display: flex;
+    justify-content: center;
+}
 #conteudo>div {
     font-family: "Roboto Mono", monospace;
-    margin-top: 45px;
-    margin-bottom: 35px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 #conteudo div h2 {
     font-size: 32px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 #conteudo div h3 {
     font-size: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     word-break: break-all;
 }
 
@@ -71,9 +73,8 @@
     padding-bottom: 20px;
 }
 
-#conteudo button {
-    margin-left: 30px;
-    margin-bottom: 30px;
+#conteudo button{
+    margin-top: 60px;
 }
 
 #apoia-se {
@@ -105,6 +106,8 @@
     object-fit: cover
     ;
 }
+
+
 @media (width > 1000px){
     #inicio h2,
 #conquistas h2 {

@@ -11,10 +11,10 @@ function Home() {
 
   return (
     <>
-        <Header />
-        <CarouselSlide />
-        <div className="container">
-       
+      <Header />
+      <CarouselSlide />
+      <div className="container">
+
         <div id='inicio' className='card1'>
           <h2>Projeto Fênix de <br />Esporte, <br />Cultura <br />e Lazer</h2>
           <strong className='text-center'>Desde 2015</strong>
@@ -36,7 +36,9 @@ function Home() {
               <img src={IconeBola} />
               <img src={IconeTrofeu} />
             </div>
-            <button className='botao-laranja'>LEIA MAIS!</button>
+            <div className='w-100'>
+              <button className='botão-laranja_quadrado'>LEIA MAIS!</button>
+            </div>
           </div>
 
         </section>
