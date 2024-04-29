@@ -5,6 +5,10 @@ import CarouselSlide from './Carousel.jsx'
 import IconeBook from './assets/images/iconebook.png'
 import IconeBola from './assets/images/iconebola.png'
 import IconeTrofeu from './assets/images/iconetrofeu.png'
+import IconeBolaBranca from './assets/images/bola.png'
+import IconeApoio from './assets/images/apoio.png'
+import IconeProfessor from './assets/images/professor.png'
+
 import './Home.css'
 import './index.css'
 function Home() {
@@ -15,8 +19,8 @@ function Home() {
       <CarouselSlide />
       <div className="container">
 
-        <div id='inicio' className='card1'>
-          <h2>Projeto Fênix de <br />Esporte, <br />Cultura <br />e Lazer</h2>
+        <div id='inicio' className='card1 '>
+          <h2 className='reveal'>Projeto Fênix de <br />Esporte, <br />Cultura <br />e Lazer</h2>
           <strong className='text-center'>Desde 2015</strong>
           <button className='botao-laranja'>SOBRE O PROJETO</button>
         </div>
@@ -42,15 +46,22 @@ function Home() {
           </div>
 
         </section>
-        <section id='apoia-se'>
-          <div>
+        </div>
+        <section id='apoia-se' >
+          <div className='container'>
             <h2>Faça Parte!</h2>
             <h3>Seja um Aluno, Professor ou Apoiador</h3>
+            <div className='apoia-se_icons'>
+              <img src={IconeBolaBranca} />
+              <img src={IconeProfessor} />
+              <img src={IconeApoio} />
+              
+            </div>
             <p>Saiba como participar ou apoiar o Projeto Fênix</p>
-            <button className='botao-laranja'>SAIBA MAIS!</button>
+            <button className='botão-laranja_quadrado '>SAIBA MAIS!</button>
           </div>
         </section>
-      </div>
+     
 
     </>
   )

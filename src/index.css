@@ -6,7 +6,7 @@
 
 h1,
 h2,
-button {
+button, p {
   font-family: "Roboto Mono", monospace !important;
 }
 
@@ -32,7 +32,7 @@ button {
   border: 1px solid black;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.527);
   cursor: pointer;
-  padding: 10px;
+  padding: 14px;
   width: 50%;
   font-weight: bold;
 }
