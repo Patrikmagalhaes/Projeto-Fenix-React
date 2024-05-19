@@ -6,28 +6,9 @@ import {
     CarouselIndicators,
     CarouselCaption,
 } from 'reactstrap';
-import './Home.css'
-import AmizadeFoto from './assets/images/time.jpg'
-const items = [
+import '../../screens/Home/Home.css'
 
-    {
-        src: 'https://www.institutoclaro.org.br/educacao/wp-content/uploads/sites/2/2013/11/planodeaulaesporte_1840.jpg',
-
-        key: 1,
-    },
-    {
-        src: AmizadeFoto,
-
-        key: 2,
-    },
-    {
-        src: 'https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/esportes/WhatsApp%20Image%202020-01-20%20at%2014_41_23%20(2).jpeg',
-
-        key: 3,
-    }
-];
-
-function CarouselSlide(args) {
+function CarouselSlide({items}) {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -71,7 +52,7 @@ function CarouselSlide(args) {
             activeIndex={activeIndex}
             next={next}
             previous={previous}
-            {...args}
+            {...items}
 
         >
             <CarouselIndicators
